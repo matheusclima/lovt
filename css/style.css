@@ -1,156 +1,247 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    box-shadow: 0 -2px 10px black; 
-    margin-bottom: 16px;
+  box-shadow: 0 -2px 10px black;
+  margin-bottom: 16px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 2vw;
 }
 
 .container > div {
-    display: flex;
-    gap: 5%;
-    width: 25%;
-    min-width: 110px;
-    font-size: .6rem;
-    color: #777777;
+  display: flex;
+  gap: 5%;
+  width: 25%;
+  min-width: 110px;
+  font-size: 0.6rem;
+  color: #777777;
 }
 
 .container > div > span {
-    width: 50px;
+  width: 50px;
+}
+
+.container > .menu--text {
+  display: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    padding: 0 1vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2vw;
 }
 
 main > img {
-    width: 100%;
+  width: 100%;
 }
 
 .offers {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
 .offers > article {
-    width: 80%;
-    margin: 25px 0;
-    padding-bottom: 20px;
-    background-color: #EEEEEE;
-    box-shadow: 0px 2px 10px #999;
+  width: 80%;
+  margin: 25px 0;
+  padding-bottom: 20px;
+  background-color: #eeeeee;
+  box-shadow: 0px 2px 10px #999;
 }
 
 .offers > article > img {
-    width: 100%;
+  width: 100%;
 }
 
 .offer {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    color: #9F8D7E;
-    
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: #9f8d7e;
 }
 
 .new > span:nth-child(2) {
-    text-align: center;
-    font-size: .9rem;
-    color: #FFF;
-    padding: 0 5px;
-    background-color: #51D275;
-    border-radius: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0 5px;
+  background-color: #51d275;
+  border-radius: 10px;
 }
 
 .sale > span:nth-child(2) {
-    text-align: center;
-    font-size: .9rem;
-    color: #FFF;
-    padding: 0 5px;
-    background-color: #DC9730;
-    border-radius: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  padding: 0 5px;
+  background-color: #dc9730;
+  border-radius: 10px;
 }
 
 .offers > article > span {
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    padding: 5px;
-    font-size: .8rem;
-    color: #9D9AA4;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 5px;
+  font-size: 0.8rem;
+  color: #9d9aa4;
 }
 
 .styles {
-    text-align: center;
-    color: #8F7D77;
+  text-align: center;
+  color: #8f7d77;
 }
 
 .styles > article {
-    position: relative;
+  position: relative;
 }
 
 .styles > article > h3 {
-    position: absolute;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #FFF;
-    top: 15%;
-    left: 40%;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #fff;
+  top: 15%;
+  left: 40%;
 }
 
 .styles > article > img {
-    width: 100%;
-    height: 80px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
 }
 
 form > h2 {
-    color: #77777A;
+  color: #77777a;
 }
 
-form > input, form > textarea {
+form > input {
     text-align: center;
-    outline: none;
-    width: 80%;
-    font-size: 1rem;
+}
+
+form > input,
+form > textarea {
+  outline: none;
+  width: 80%;
+  font-size: 1rem;
+  padding-left: 5px;
 }
 
 form > button {
-    font-size: 1.2rem;
-    padding: 15px;
-    border: none;
-    border-radius: 30px;
-    outline: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  background-color: #dc9730;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    padding: 2vw 15vw;
+    gap: 15px;
+    background-color: #333333;
+    font-size: .8rem;
+}
+
+footer > iframe {
+    height: 100%;
+    width: 25vh;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    color: #666B61;
+    gap: 5px;
+}
+
+footer > div > a {
     color: white;
-    background-color: #DC9730;
 }
 
 @media (min-width: 700px) {
-}
+  .container {
+    padding: 10px 50px;
+  }
 
+  .container > div:first-child > span {
+    width: 50px;
+  }
+
+  .container > .menu--text {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+  }
+
+  .container > .menu--text > a {
+    width: min-content;
+    text-decoration: none;
+    color: #777777;
+    font-size: 0.9rem;
+  }
+
+  .menu--image {
+    display: none;
+  }
+
+  main {
+    margin: auto;
+    max-width: 960px;
+  }
+
+  .offers {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .offers > article {
+    width: 40%;
+  }
+
+  .styles > article > img {
+    height: auto;
+  }
+
+  .styles > article > h3 {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 15%;
+    left: 45%;
+  }
+
+  form > input,
+  form > textarea {
+    width: 40%;
+    color: #777;
+  }
+}
