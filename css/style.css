@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth !important;
+  font-family: "Ropa Sans", sans-serif;
 }
 
 body {
@@ -108,22 +109,25 @@ main > img {
 
 .styles > article {
   position: relative;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .styles > article > h3 {
   position: absolute;
-  font-size: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 1.3rem;
   font-weight: bolder;
-  color: #fff;
-  top: 15%;
-  left: 40%;
+  color: #FFF;
 }
 
 .styles > article > img {
   width: 100%;
-  height: 80px;
+  height: 11vh;
   border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 form {
@@ -140,7 +144,7 @@ form > h2 {
 }
 
 form > input {
-    text-align: center;
+  text-align: center;
 }
 
 form > input,
@@ -162,29 +166,29 @@ form > button {
 }
 
 footer {
-    display: flex;
-    width: 100%;
-    height: 25vh;
-    padding: 2vw 15vw;
-    gap: 15px;
-    background-color: #333333;
-    font-size: .8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  padding: 2.5vw 45px;
+  background-color: #333333;
+  font-size: 0.8rem;
 }
 
 footer > iframe {
-    height: 100%;
-    width: 25vh;
+  display: none;
 }
 
 footer > div {
-    display: flex;
-    flex-direction: column;
-    color: #666B61;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  gap: 10%;
 }
 
-footer > div > a {
-    color: white;
+footer img {
+  margin-right: 10px;
 }
 
 @media (min-width: 700px) {
@@ -228,20 +232,31 @@ footer > div > a {
     width: 40%;
   }
 
-  .styles > article > img {
-    height: auto;
-  }
-
-  .styles > article > h3 {
-    position: absolute;
-    font-size: 1.3rem;
-    top: 15%;
-    left: 45%;
-  }
-
   form > input,
   form > textarea {
     width: 40%;
     color: #777;
   }
+  
+  footer {
+      height: 25vh;
+      justify-content: space-around;
+  }
+
+  footer > iframe {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    max-width: 200px;
+    border-radius: 15px;
+  }
+
+  footer > div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: white;
+    gap: 10%;
+  }
+
 }
