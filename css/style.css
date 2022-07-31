@@ -45,8 +45,32 @@ main {
   padding: 0 2vw;
 }
 
-main > img {
+.slide {
+  position: relative;
+}
+
+.slide-image {
   width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  background-color: red;
+  width: 5%;
+  aspect-ratio: 1;
+  background-color: rgba(141, 141, 141, 0.62);
+  border-radius: 50%;
+}
+
+.left {
+  left: 5%;
+  transform: translateY(-50%) ;
+}
+
+.right {
+  right: 5%;
+  transform: translateY(-50%);
 }
 
 .offers {
